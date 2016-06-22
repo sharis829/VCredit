@@ -1,0 +1,95 @@
+.section-data
+  padding: 0 20px 20px
+  +clearfix
+  
+  .summary-label
+    font-size: 1.1em
+    color: $goldenColor  
+    margin-bottom: 10px
+  
+  .summary-number
+    color: #fff
+    font-size: 3.2rem
+  
+    span
+      display: block
+      +size(55px, 70px)
+      float: left
+      margin-right: 12px
+      background-color: $bgColor
+      text-align: center
+      line-height: 70px
+      margin-bottom: 12px
+    i
+      display: inline-block
+      +size(auto, 70px)
+      float: left
+      margin-left: -12px
+      font-style: normal
+      font-family: "Trebuchet MS"
+      margin-bottom: 12px
+      line-height: 1.2
+  
+  .block-tab
+    text-align: center    
+    
+    button
+      display: inline-block
+      border: 2px solid #007aff
+      background-color: #1e365c
+      border-radius: 5px     
+      color: #007aff
+      +size(255px, 36px)
+      line-height: 32px  
+      text-align: center
+      font-size: 0.9rem
+      &.active
+        background-color: #007aff 
+        color: #fff
+      &:focus
+        outline: 0
+      &:hover
+        border-color: $goldenColor
+        background-color: $goldenColor
+        color: #007aff
+      
+    .btn-contract-amount
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0 
+      border-right: none
+      
+    .btn-register-amount
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+      border-left: none
+
+@media (max-width: 640px)
+  .section-data .block-tab button
+    width: 50%
+            
+.block-container
+  background-color: #1e365c
+  padding: 25px
+  border-radius: 2px
+
+.small-gap-bottom
+  margin-bottom: 10px
+
+.big-gap-bottom
+  margin-bottom: 20px
+  
+.icon
+  +square(25px)
+  display: inline-block
+  text-align: center
+  line-height: 25px
+  margin-right: 5px
+  
+  &.icon-apply-amount
+    position: relative
+    left: 2px
+    
+.iconfont.icon-apply-amount
+  font-size: 20px  
+  
+
